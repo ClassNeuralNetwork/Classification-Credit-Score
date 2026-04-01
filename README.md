@@ -1,2 +1,15 @@
-# Classification-Credit-Score
-An intelligent credit scoring system that uses a neural network behind the scenes to identify patterns in the data that represent customer behavior at that institution, making credit decisions more accurate and faster to process.
+# AI & DATA JOB PREDICTOR
+
+The goal of this predictor is to assess whether job offers in AI and Data are statistically fair based on the profile and current market.
+
+## Project Problem
+
+The global AI and Data market is opaque: professionals in the field clearly know whether a job offer is fair, below, or above market rates, especially when it involves other countries, currencies, and work arrangements. Static sources such as reports and job platforms do not capture the interaction between workload, seniority, location, and work model simultaneously.
+
+## Solution
+
+A neural network-based simulator that, given a professional's profile, predicts the offer package the market would have to offer: salary in USD, proportion of remote work, and company location. A senior data scientist in Brazil, for example, could consult the model and receive something like "expect USD 95k, 50% remote, medium-sized company." This information is directly actionable for negotiations and career decisions.
+
+## Neural Network Problem
+
+This is a multi-regression problem: the network receives characteristics of the candidate's profile and predicts three goals simultaneously: salary_in_USD, bonus_USD, work mode. Predicting all three together is superior to separate models because these targets are correlated in the real market (high salary tends to go hand in hand with less remote flexibility, for example). The network learns this codependency automatically during training.
